@@ -1,0 +1,38 @@
+﻿<Window x:Class="Plants_App.EditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Plants_App"
+        mc:Ignorable="d"
+        Title="Окно редактирования" Height="490" Width="400" WindowStartupLocation="CenterScreen"
+        Background="#FAF6E9">
+    <Grid>
+        <StackPanel Margin="20 10 20 0">
+            <TextBlock Text="Редактировать партнера" TextAlignment="Center" FontSize="20" Margin="0 0 0 20" />
+
+            <TextBlock Text="Тип" FontSize="20" />
+            <TextBox x:Name="typeInput" Margin="0 0 0 10" />
+
+            <TextBlock Text="Название" FontSize="20"/>
+            <TextBox x:Name="nameInput" Margin="0 0 0 10" />
+
+            <TextBlock Text="Директор" FontSize="20" />
+            <TextBox x:Name="directorInput" Margin="0 0 0 10" />
+
+            <TextBlock Text="Номер телефона" FontSize="20" />
+            <TextBox x:Name="phoneInput" Margin="0 0 0 10" />
+
+            <TextBlock Text="Рейтинг" FontSize="20" />
+            <TextBox x:Name="retingInput" />
+            <TextBlock x:Name="error" Text="" TextWrapping="Wrap" FontSize="16" Foreground="#CA7373" Margin="0 0 0 20" TextAlignment="Center" Visibility="Hidden" />
+
+            <StackPanel Width="200">
+                <Button Margin="0 0 0 10" BorderBrush="#A0C878" Background="#DDEB9D" FontSize="16" Click="ButtonClick">Сохранить</Button>
+                <Button Background="#CA7373" BorderBrush="#A31D1D" FontSize="16" Click="ButtonClick1">Отменить</Button>
+            </StackPanel>
+        
+        </StackPanel>
+
+    </Grid>
+</Window>

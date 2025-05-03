@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Master_Paul_App": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
